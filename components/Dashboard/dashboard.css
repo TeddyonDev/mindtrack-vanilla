@@ -1,0 +1,271 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base font styles */
+body{
+  background-color: #3B9A9B;
+  font-family: 'Nunito', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+
+.subtitle {
+  color: #d6e5e3;
+  font-size: 1.1rem;
+}
+
+.card {
+  background-color: white;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background-color: #2e7b7b;
+  color: white;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Button styles */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.journal-entry-card {
+  width: 100%;
+  max-width: 600px;
+  min-height: 300px;
+  margin: 40px auto;
+  padding: 30px;
+  text-align: left;
+  background-color: white;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Prevent hover effect from .card:hover */
+.journal-entry-card:hover {
+  transform: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  color: #333;
+}
+
+.journal-entry button {
+  margin: 0 auto; /* Centers the button horizontally */
+  display: block; /* Required for margin auto to take effect */
+}
+
+.card {
+  background-color: white;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background-color: #2E7B7B;
+  color: white;
+}
+
+
+#entry-saved-message {
+  margin-top: 10px;
+  text-align: center;
+  color: #2E7B7B;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#entry-saved-message.show {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+/* layout.css */
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #2E7B7B;
+  color: white;
+  text-align: center;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  margin-right: 20px;
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-content h1 {
+  font-size: 28px;
+  color: #fff;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 4px;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Unified Journal Entry Card Style */
+.journal-entry {
+  width: 90%;
+  max-width: 800px;
+  min-height: 300px;
+  margin: 50px auto;
+  background-color: white;
+  color: #333;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.journal-entry h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.journal-entry label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.journal-entry select,
+.journal-entry textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  resize: vertical;
+}
+
+.journal-entry button {
+  background-color: #3b9a9b;
+  color: white;
+  padding: 14px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.journal-entry button:hover {
+  background-color: rgb(57, 180, 180);
+}
+
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  .app-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+    height: 50px;
+  }
+
+  .journal-entry {
+    padding: 20px;
+  }
+}
+/* Custom styles for homepage or specific elements */
+/* Heading and title adjustments */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+
+  

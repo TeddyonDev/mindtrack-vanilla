@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindTrack Header</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="app-header">
+    <img src="mindtrack-logo.png" alt="Mindtrack Logo" class="logo" />
+    <div class="text-content">
+    <h1>MindTrack</h1>
+    <p class="subtitle">Track your thoughts. Reclaim your mind.</p>
+    </div>
+  </header>
+
+ <main>
+
+  <section class="dashboard">
+    <div class="card mood-card">
+      <h2>Mood Tracker</h2>
+      <p>Log how you feel today</p>
+    </div>
+    <div class="card journal-card">
+      <h2>Journal</h2>
+      <p>Write your thoughts</p>
+    </div>
+    <div class="card history-card">
+      <h2>History</h2>
+      <p>See your past entries</p>
+    </div>
+    <div class="card history-card">
+      <h2>Reality Anchor</h2>
+      <p>Anchor Your Mind</p>
+    </div>
+    <div class="card history-card">
+      <h2>Close Circle</h2>
+      <p>People Who Care</p>
+    </div>
+    <div class="card history-card">
+      <h2>Grounding Tools</h2>
+      <p>Take a moment to Breathe</p>
+    </div>
+  </section>
+
+  <section class="journal-entry">
+    <h2>Track Your Mood</h2>
+    <form id="journal-form">
+      <label for="mood-select">Choose a mood:</label>
+      <select id="mood-select" name="mood">
+        <option value="😊">Happy</option>
+        <option value="😐">Neutral</option>
+        <option value="😢">Sad</option>
+        <option value="😡">Angry</option>
+      </select>
+
+      <label for="journal-text">Your Thoughts:</label>
+      <textarea id="journal-text" name="journal-text" rows="4" placeholder="How are you feeling today?"></textarea>
+
+      <button type="submit" id="submit-journal">Submit</button>
+      
+    </form>
+  </section>
+
+  <p id="entry-saved-message" class="hidden">Entry saved successfully!</p>
+
+</main>
+
+  <script src="\dashboard.js"></script>
+</body>
+</html>

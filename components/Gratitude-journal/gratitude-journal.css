@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+/* Component-specific styles */
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.entry-container {
+  display: flex;
+  justify-content: space-between; /* keep the delete button on right */
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.entry-container span {
+  flex: 1;
+  word-wrap: break-word;
+  white-space: pre-wrap; /* preserves line breaks */
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+/* Layout-specific styles */
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#pastEntries {
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Entries List */
+#entriesList {
+  list-style-type: none;
+}
+
+#entriesList li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+#entriesList li:hover {
+  background-color: #e9f9e5;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+    width: 100%;
+  }
+}
+/* Custom styles like theme and branding */
+h1 {
+  text-align: center;
+  color: #333;
+  padding: 10px;
+}
+
+#entriesList {
+  list-style-type: none;
+}
+
+#entriesList li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}

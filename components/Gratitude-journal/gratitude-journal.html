@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gratitude Journal</title>
+  <link rel="stylesheet" href="gratitude-journal.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ <div class="container">
+  <h1>Gratitude Journal</h1>
+
+  <form id="JournalForm">
+    <label for="entry">Write something you're grateful for:</label>
+    <textarea id="entry" rows="4" placeholder="type your gratitude here."></textarea>
+    <button type="submit">Add Entry</button>
+  </form>
+
+  <div id="pastEntries">
+    <h2>Your Past Entries</h2>
+    <ul id="entriesList">
+
+
+    </ul>
+  </div>
+ </div>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
